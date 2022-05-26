@@ -1,0 +1,68 @@
+body {
+    background-color: #ffffff;
+    background-image: url("../images/silverware.jpg");
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body p {
+    color: #404040;
+    font-size: 11pt;
+}
+.mainContent {
+    width: 1024px;
+    margin: auto;
+  }
+
+
+
+h2 {
+  display: table;
+  font-family: "Lucida Sans Unicode", Helvetica, Arial;
+  font-size: 18pt;
+  font-weight: normal;
+  /* background-color: #f0f0f0; */
+  color: #a4a400;
+  text-align: left;
+  text-decoration: underline;
+  /* letter-spacing: 0.25em; */
+}
+
+div > h1.mainTitle {
+    font-family: "Lucida Sans Unicode", Helvetica, Arial;
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    color: #a4a400;
+    text-decoration: underline;
+}
+div#mainContent {
+    margin: 5.5em;
+}
+.recipe-title, .important{
+    font-weight: bold;
+}
+a {
+    color: #a4a400;
+  }
+.titles {
+    background-color: #f0f0f0;
+}
+
+/* Pie bullet */
+.ingredients li {
+    list-style-image: url("../images/pie_icon.gif");
+  }
+
+/* word with strike-out line (deleted word) */
+.deleted-word {
+    text-decoration: line-through;
+  }
+
+  blockquote {
+    background-color: #ffffa8;
+    font-style: italic;
+  }
+pre {
+    font-family: monospace;
+}
