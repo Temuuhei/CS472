@@ -28,7 +28,7 @@ h2 {
 }
 
 
-body > h1.mainTitle {
+div > h1.mainTitle {
     font-family: "Lucida Sans Unicode", Helvetica, Arial;
     font-size: 22pt;
     font-weight: bold;
