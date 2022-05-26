@@ -54,7 +54,7 @@ a {
     list-style-image: url("../images/pie_icon.gif");
   }
 
-/* word with strike-out line (deleted word) */
+/* word with strike-out line (deleted word) this class is also correct but used del tag in html */
 .deleted-word {
     text-decoration: line-through;
   }
