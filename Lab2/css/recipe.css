@@ -27,7 +27,8 @@ h2 {
   /* letter-spacing: 0.25em; */
 }
 
-body > h1 {
+
+body > h1.mainTitle {
     font-family: "Lucida Sans Unicode", Helvetica, Arial;
     font-size: 22pt;
     font-weight: bold;
