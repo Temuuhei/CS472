@@ -11,7 +11,6 @@ body p {
 }
 .mainContent {
     width: 1024px;
-    margin: auto;
   }
 
 
@@ -28,16 +27,18 @@ h2 {
   /* letter-spacing: 0.25em; */
 }
 
-div > h1.mainTitle {
+body > h1 {
     font-family: "Lucida Sans Unicode", Helvetica, Arial;
     font-size: 22pt;
     font-weight: bold;
     text-align: center;
     color: #a4a400;
     text-decoration: underline;
+    /* margin: 20px auto; */
+    
 }
 div#mainContent {
-    margin: 5.5em;
+    padding-left: 3em;    
 }
 .recipe-title, .important{
     font-weight: bold;
