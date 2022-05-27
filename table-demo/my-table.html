@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First HTML Table demo</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            
+        }
+        table caption {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        table th, table td {
+            border: 1px solid black;
+            
+        }
+        table th {
+            background-color: darkgray;
+        }
+        table tbody {
+            background-color: rgb(206, 201, 195);
+        }
+        table tfoot {
+            background-color: rgb(163, 219, 219);
+        }
+      
+    </style>
 </head>
 <body id="root">
     <header>
@@ -15,7 +41,7 @@
     <main>
         <h1>Welcome to my HTML Table Demo</h1>
     </main>
-    <table border="1">
+    <table >
         <caption>List of Customers</caption>
         <thead>
             <tr>
