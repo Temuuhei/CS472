@@ -5,7 +5,7 @@ img {
 
 #profile-pic {
     position: relative;
-    width: 10%;
+    width: 50%;
     border-radius: 50%;
 }
 a:hover {
@@ -73,3 +73,19 @@ p , li, caption {
     font-size: small;
     font-style: italic;
 }
+/* .container {
+    width: 800px;
+    margin: auto;
+    overflow: auto;
+    border: gray 4px solid;
+    border-radius: 20px;
+}
+.right-area{
+    position: fixed;
+    width: 260;
+    float: right;
+}
+.profile-area {
+    width: 540px;
+    float: left;
+} */
