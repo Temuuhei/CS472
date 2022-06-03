@@ -222,7 +222,7 @@ function addProduct() {
 function clock() {
     let currentDate = new Date();
     let year = currentDate.getFullYear();
-    let month = currentDate.getMonth();
+    let month = currentDate.getMonth() + 1;
     let day = currentDate.getDate();
     let hour = currentDate.getHours();
     let minute = currentDate.getMinutes();

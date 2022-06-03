@@ -1,0 +1,38 @@
+.lexImage {
+    float: right;
+}
+
+fieldset {
+    font-size: 14px;
+  }
+  
+  legend {
+    font-style: italic;
+    font-size: 16px;
+  }
+  
+  pre {
+    color: darkblue;
+    font-size: 12px;
+  }
+  
+  .result {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    flex-flow: row;
+  }
+  
+  span.output {
+    color: deeppink;
+    margin-left: 50px;
+    width: 15%;
+  }
+  
+  span.explanation {
+    color: midnightblue;
+    padding-left: 25px;
+    width: 85%;
+  }
+
