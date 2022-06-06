@@ -1,28 +1,28 @@
 'use strict';
+const myform = document.getElementById("mainForm");
+function clock() {
+    let currentDate = new Date();
+    let year = currentDate.getFullYear();
+    let month = currentDate.getMonth() + 1;
+    let day = currentDate.getDate();
+    let hour = currentDate.getHours();
+    let minute = currentDate.getMinutes();
+    let second = currentDate.getSeconds();
+    let date = currentDate.getUTCDate();
+    hour = hour < 10 ? "0" + hour : hour;
+    minute = minute < 10 ? "0" + minute : minute;
+    second = second < 10 ? "0" + second : second;
+
+    let add = hour > 12 ? "PM" : "AM";
+
+    let fullClock =
+        year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second + " " + add;
+
+    document.getElementById("clock").innerText = fullClock;
+    setTimeout(clock, 1000)
+};
+clock();
 window.onload = function() {
-    const myform = document.getElementById("mainForm");
-    function clock() {
-        let currentDate = new Date();
-        let year = currentDate.getFullYear();
-        let month = currentDate.getMonth() + 1;
-        let day = currentDate.getDate();
-        let hour = currentDate.getHours();
-        let minute = currentDate.getMinutes();
-        let second = currentDate.getSeconds();
-        let date = currentDate.getUTCDate();
-        hour = hour < 10 ? "0" + hour : hour;
-        minute = minute < 10 ? "0" + minute : minute;
-        second = second < 10 ? "0" + second : second;
-    
-        let add = hour > 12 ? "PM" : "AM";
-    
-        let fullClock =
-            year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second + " " + add;
-    
-        document.getElementById("clock").innerText = fullClock;
-        setTimeout(clock, 1000)
-    };
-    clock();
     myform.addEventListener("submit", event => {
         console.log("Enter submit");
         event.preventDefault();

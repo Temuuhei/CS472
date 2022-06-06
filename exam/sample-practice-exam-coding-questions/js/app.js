@@ -8,7 +8,6 @@ function clock() {
     let minute = currentDate.getMinutes();
     let second = currentDate.getSeconds();
     let date = currentDate.getUTCDate();
-    console.log(date);
     hour = hour < 10 ? "0" + hour : hour;
     minute = minute < 10 ? "0" + minute : minute;
     second = second < 10 ? "0" + second : second;
@@ -25,7 +24,6 @@ clock()
 window.onload = function () {
     const myForm = document.getElementById("mainForm");
     myForm.addEventListener("submit", event => {
-        console.log("hereeee");
         event.preventDefault();
         const fullName = document.getElementById("fullName");
         const citizenId = document.getElementById("citizenId");
