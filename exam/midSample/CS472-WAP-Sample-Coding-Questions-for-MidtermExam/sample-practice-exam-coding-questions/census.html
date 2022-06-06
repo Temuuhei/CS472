@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="WAP, Midterm, CS472">
+    <meta name="author" content="Temuujin Tsogt">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The South West - Regional Census</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/cerulean/bootstrap.min.css" 
+      integrity="sha512-CVn5BJ6vue0EG9CDO6yfg3hOvzQ43xEXOSUEkUtiV3pDy2S7O0saUZ0vbDkZYVX30NvqLLZo51JBzUyreGyqvg==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" 
+      />
+      <!-- My custom CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+      <script defer src="./js/app.js"></script>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">The South West-Regional Census</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Census Form</a>
+                  </li>
+                </ul>
+                <span id="spnDateTime"></span>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Census Form</h2>
+            <hr />
+            <form id="mainForm">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name:*</label>
+                            <input 
+                                class="form-control"
+                                type="text" 
+                                required
+                                id="fullName"
+                                placeholder="Enter your Full Name"
+                            />
+                            <div class="form-text">Enter your Full Name as printed on your Government-issued ID</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="citizenId" class="form-label">Citizen ID:*</label>
+                        <input type="text" 
+                            class="form-control"
+                            required
+                            id="citizenId"
+                            pattern="\d{10}"
+                            title="XXXXXXXXXX and all numbers, 10 digits"
+                            placeholder="XXXXXXXXXX"
+                        />
+                        <div class="form-text">Enter your 10 Digit Citizen ID</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ssnId" class="form-label">Social Security ID:*</label>
+                        <input type="text" 
+                            class="form-control"
+                            required
+                            id="ssnId"
+                            pattern="\d{3}-\d{2}-\d{4}"
+                            title="XXX-XX-XXXX and all numbers"
+                            placeholder="XXX-XX-XXXX"
+                        />
+                        <div class="form-text">Enter the Social Security Number(in the format shown)</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">State:*</label>
+                        <select name="state" id="state" class="form-select" required>
+                            <option value="">Select...</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="Texas">Texas</option>
+                        </select>
+                        <div class="form-text">Select your State of residence</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Is a Senior Citizen? :*</label>
+                            <div>
+                                <input type="radio" name="radBtnSnrCitizen" id="radBtnSnrCitizenYes" value="Yes">
+                                <label for="radBtnSnrCitizenYes">Yes</label>
+                                <input type="radio" name="radBtnSnrCitizen" id="radBtnSnrCitizenNo" value="No">
+                                <label for="radBtnSnrCitizenNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row census-form-row">
+                    <div class="col-md-6">
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <input type="reset" class="btn btn-secondary" value="Reset">
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <section class="footer-section-left">
+            <span>Temuujin Tsogt : : : CS-742-WAP</span>
+        </section>
+        <section class="footer-section-right">
+            <span>&copy; June 2022</span>
+        </section>
+    </footer>
+</body>
+</html>

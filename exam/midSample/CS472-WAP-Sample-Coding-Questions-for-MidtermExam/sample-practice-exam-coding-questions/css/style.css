@@ -1,0 +1,39 @@
+span#spnDateTime {
+    font-size: 16;
+    color: #ffffff;
+    font-weight: bold;
+}
+img#sw-census-logo {
+    float: right;
+}
+/* h2,h3 {
+    color: rgb(15, 14, 14);
+} */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #cfcfcf;
+    width: 100vw;
+    display: flex;
+    min-height: 5vh;
+    align-items: center;
+}
+
+footer > section {
+    display: flex;
+    width: 50vw;
+}
+
+footer > section.footer-section-right {
+    justify-content: end;
+}
+footer > section.footer-section-right span {
+    margin: 0 1em 0 1em;
+}
+
+footer > section.footer-section-left span {
+    margin: 0 1em 0 1em;
+}
+div.census-form-row {
+    margin-bottom: 1.20em;
+}

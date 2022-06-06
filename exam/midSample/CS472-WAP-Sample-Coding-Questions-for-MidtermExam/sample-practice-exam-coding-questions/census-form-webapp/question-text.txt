@@ -1,0 +1,17 @@
+Assume you have been hired by the Regional Office of Census Administration of the South West states, USA. And they have tasked you to design and build a website for the 2020 Census, including just a homepage and a Census Data Collection form (see the sample web UIs shown below).
+
+Using HTML, CSS and JavaScript, implement the website, as shown in the UI screenshots below, with the features and functionalities, specified/listed further below:
+
+1.1 Code the User interface of the web application using standards-compliant, semantically-correct HTML5 markup, including all the web pages and form fields as shown in the UI screenshots above.
+
+1.2 Apply styling using Bootstrap or you may apply your own custom CSS styling to produce the same or similar look and layout. Note: Your UI does NOT necessarily have to be exactly the same as the sample shown above. But it should have all the necessary form data input fields, labels, images and buttons etc.
+
+1.3 Citizen ID, Social Security Number, Full Name, State and Senior Citizen are all required data, to submit the Census form.
+
+1.4 Add validation using appropriate regular expression to ensure that each Citizen ID and Social Security Number entered must be in the specified format of, XXXXXXXXXX and XXX-XX-XXXX, respectively, as shown on the Census form UI above. And where X is a numeric digit.
+
+1.5 The user can record citizens’ data for the following 3 states of the South West region – Arizona, New Mexico and Texas. Therefore, your drop-down list data field on the Census form should contain these 3 options.
+
+1.6 Add JavaScript code to implement a feature such that when the Submit button is clicked and the Census Form data is submitted, the web browser should display the data entered in an Alert popup dialog box, like shown below.
+
+(Please note: Points will be awarded based on your adherence to Web programming recommended best practices such as use of standards-compliant, semantically-correct HTML5 markup, unobtrusive CSS, unobtrusive JavaScript etc).
