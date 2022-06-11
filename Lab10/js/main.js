@@ -18,5 +18,6 @@ persons.forEach((person) => {
 import Employee from "./model/employee.js";
 
 const jim = new Employee("Jim Hanson", new Date(1985, 11, 15), 245990.0, new Date(2022, 6, 9));
-
+// print out the console
 console.log(jim.doJob("Software Engineer"));
+console.log("jim's to string : " + jim.toString());

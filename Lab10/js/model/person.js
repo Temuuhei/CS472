@@ -21,6 +21,8 @@ Inside the js sub-folder of your webapp folder, create another JS source file na
 Iterate through the array and Print-out to the console, the information about the persons using the toString() method you defined.
  */
 export class Person {
+    _name = "";
+    _dateOfBirth = null;
     constructor(name, dateOfBirth) {
         this._name = name;
         this._dateOfBirth = dateOfBirth;

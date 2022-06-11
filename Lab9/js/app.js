@@ -36,7 +36,7 @@ console.log(
 // inheritance and the Object.create(…) method, create a generic object
 // named, employee, with the following properties:
 console.log("----------- Question 2 --------------");
-
+// Alternative syntax using Object.createe(proto, [propsObjects])
 const employee = Object.create(person, {
     salary: { writable: true, configurable: true, enumerable: true, value: 0},
     hireDate: {
@@ -69,24 +69,30 @@ console.log(anna.doJob("Programmer"));
 // return the string representation of the person object data in the
 // format:
 console.log("----------- Question 3 --------------");
-// function Person(name, dateOfBirth) {
-//     this.name = name,
-//     this.dateOfBirth = dateOfBirth;
-// }
-function Person() {
-    person.toString = function () {  
-        return (
-            "{Name: " + this.name + " , DateOfBirth: " +
-            this.dateOfBirth.getFullYear() + 
-            "-" + (this.dateOfBirth.getMonth() + 1) + 
-            "-" +this.dateOfBirth.getDate() + "}"
-        );    
-    };
-};
+function Person(name, dateOfBirth) {
+    this.name = name,
+    this.dateOfBirth = dateOfBirth;
+}
+// function Person() {
+//     person.toString = function () {  
+//         return (
+//             "{Name: " + this.name + " , DateOfBirth: " +
+//             this.dateOfBirth.getFullYear() + 
+//             "-" + (this.dateOfBirth.getMonth() + 1) + 
+//             "-" +this.dateOfBirth.getDate() + "}"
+//         );    
+//     };
+// };
 
-Person.prototype = person;
-const peter = new Person();
-peter.setName("Peter");
-peter.dateOfBirth = new Date(1985, 10, 10);
+const peter = new Person("Peter",new Date(1985, 10, 10));
+Person.prototype.toString = function () {
+    return `Name : ${this.name} , DateOfBirth : ${new Intl.DateTimeFormat('en-US').format(new Date(this.dateOfBirth))}`
+    };
+
+
+// Person.prototype = person;
+// const peter = new Person();
+// peter.setName("Peter");
+// peter.dateOfBirth = new Date(1985, 10, 10);
 
 console.log(peter.toString());
