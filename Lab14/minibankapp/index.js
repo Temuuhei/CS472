@@ -13,6 +13,8 @@ const accountRoutes = require("./routes/account");
 const app = express();
 const PORT_NUMBER = 9000;
 
+// app.engine('pug', require('pug').__express);
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
