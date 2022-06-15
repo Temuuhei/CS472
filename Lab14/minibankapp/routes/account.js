@@ -9,7 +9,7 @@ const accountController = require("../controller/accountController");
 const accountRouter = express.Router();
 
 accountRouter.get("/", async(req, res, next) => {
-    console.log("hereeeee");
+    // console.log("hereeeee");
     const accounts = await accountController.getAccounts(req, res);
     res.locals = { accounts : accounts };
     res.render("account");
@@ -18,6 +18,7 @@ accountRouter.get("/", async(req, res, next) => {
 
 accountRouter.post("/register", async(req, res, next) => {
     console.log("Registering...");
+    // console.log('postttttt');
     // const newAccount = new Account(
     //   data.txtAccountNo,
     //   data.txtCustomerName,

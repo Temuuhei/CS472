@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended : false }));
 app.use("/static", express.static(path.join(__dirname, "public")));
 app.use("", homeRoutes);
 app.use("/account", accountRoutes);
-console.log("overrrr");
+// console.log("overrrr");
 // Put the Error 404 middleware last
 app.use((req, res, next) => {
     console.log("Error");
